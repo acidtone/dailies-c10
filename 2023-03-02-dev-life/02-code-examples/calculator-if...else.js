@@ -2,7 +2,7 @@ const firstNum = 6;
 
 const secondNum = 98.3;
 
-const operation = 'add';
+const operation = 'tony';
 
 console.log(operation);
 

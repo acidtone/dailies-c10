@@ -27,7 +27,7 @@ console.log(`${num} squared is ${numSquared}.`); // ES6
 /**********************************************/
 
 const tempF = 72;
-const tempPreference = 'celsius';
+const tempPreference = 'tony';
 let temp;
 
 if (tempPreference == 'celsius') {
