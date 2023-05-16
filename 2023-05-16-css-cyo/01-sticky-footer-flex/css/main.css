@@ -1,0 +1,27 @@
+/* Create a flexbox that is full page height, at minimum */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* When there's extra space, <main> will grow into it */
+main {
+  flex: auto;
+}
+
+/* Make it "pretty" */
+body {
+  font-size: 36px;
+  font-weight: bold;
+  border: 1px solid rebeccapurple;
+  margin: 0;
+}
+
+nav,
+header,
+main,
+footer {
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}

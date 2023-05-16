@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  /* When there's extra space, the third row will grow into it */
+  grid-template-rows: auto auto 1fr auto;
+  gap: 1em;
+
+  /* Make the grid full page height, at minimum */
+  min-height: 100vh;
+}
+
+/* Make it "pretty" */
+
+body {
+  font-size: 36px;
+  margin: 0;
+  /* Big ugly border */
+  background-color: red;
+}
+
+nav,
+header,
+main,
+footer {
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+  background-color: white;
+}
+
+nav,
+header,
+footer {
+  font-weight: bold;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 75em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    /* When there's extra space, the second row will grow into it */
+    grid-template-rows: auto 1fr auto;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  nav {
+    grid-row: span 2;
+  }
+}
