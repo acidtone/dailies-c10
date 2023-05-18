@@ -1,0 +1,47 @@
+body {
+  font-size: 36px;
+  background-color: #ddd;
+}
+
+div.wrapper > * {
+  margin: 1rem;
+  background-color: white;
+  color: rebeccapurple;
+  padding: 2rem;
+}
+
+
+@media screen and (min-width: 60em) {
+  /* screen is larger than 60em */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  div {
+    margin: initial;
+  }
+
+  .city, .forecast, .day-1, .summary {
+    grid-column: span 2;
+  }
+
+  .map {
+    grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .city, .forecast, .day-1, .summary {
+    grid-column: span 3;
+  }
+  .map {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
