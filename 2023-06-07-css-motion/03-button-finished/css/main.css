@@ -1,0 +1,53 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 1em 2em;
+  color: white;
+  background: rebeccapurple;
+
+  border-radius: 1rem;
+  border: 0;
+
+  cursor: pointer;
+  font-size: 2rem;
+
+  /* transition: transform 1000ms; */
+}
+
+button:hover,
+button:focus-visible {
+  /* transform: translateY(-1.75rem); */
+  /* transition: transform 250ms; */
+}
+
+.party-time {
+  animation: party 2s infinite;
+}
+ 
+@keyframes party {
+  0% {
+    background-color: rebeccapurple;
+  }
+  20% {
+    background-color: goldenrod;
+  }
+  40% {
+    background-color: teal;
+    border-radius: 50%;
+  }
+  60% {
+    background-color: aqua;
+  }
+  80% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: yellow;
+    rotate: 360deg;
+  }
+}
