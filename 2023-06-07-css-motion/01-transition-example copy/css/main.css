@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  margin-top: 40vh;
+}
+
+div {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+
+  transition: 
+    transform .75s cubic-bezier(.42,.07,.88,1.42),
+    background-color .3s .75s, /* duration delay */
+    border-radius .2s .7s cubic-bezier(.38,1.06,.7,1.01);
+}
+
+body:hover div {
+  transform: translateX(90vw);
+  background-color: goldenrod;
+  border-radius: 0%;
+}
